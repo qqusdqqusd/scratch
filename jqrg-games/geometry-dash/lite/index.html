@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scratch Games</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==== GLOBAL STYLE ==== */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: url('background.png') center/cover no-repeat;
+      font-family: 'Press Start 2P', cursive;
+      color: white;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* Overlay effect */
+    body::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 40px;
+      text-shadow: 0 0 10px #00eaff, 0 0 20px #0080ff;
+      animation: glowTitle 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes glowTitle {
+      from { text-shadow: 0 0 10px #00eaff, 0 0 20px #0080ff; }
+      to { text-shadow: 0 0 25px #00ffff, 0 0 50px #00ccff; }
+    }
+
+    /* ==== BUTTON STYLING ==== */
+    .game-button {
+      background: rgba(0, 0, 0, 0.6);
+      border: 2px solid #00eaff;
+      color: white;
+      padding: 15px 25px;
+      margin: 10px 0;
+      width: 300px;
+      border-radius: 15px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      transition: all 0.25s ease;
+      text-decoration: none;
+      display: block;
+    }
+
+    .game-button:hover {
+      background: #00eaff;
+      color: black;
+      box-shadow: 0 0 20px #00eaff, 0 0 40px #0080ff;
+      transform: scale(1.05);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.6rem;
+      opacity: 0.8;
+    }
+
+    /* Smooth fade-in */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .game-button {
+      animation: fadeIn 0.8s ease forwards;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎮 JQRG Games 🎮</h1>
+
+  <a href="l1-2-3.html" class="game-button">STEREO MADNESS<br>BACK ON TRACK<br>POLARGEIST</a>
+  <a href="l4" class="game-button">DRY OUT</a>
+  <a href="l5" class="game-button">BASE AFTER BASE</a>
+  <a href="l6" class="game-button">JUMPER</a>
+  <a href="l7-15-18-20-21" class="game-button">GEOMETRICAL DOMINATOR<br>FINGERDASH<br>THEORY OF EVERYTHING 2<br>DEADLOCKED<br>HEXAGON FORCE</a>
+  <a href="l8" class="game-button">THEORY OF EVERYTHING</a>
+  <a href="l9" class="game-button">CANT LET GO</a>
+  <a href="l10" class="game-button">DASH</a>
+  <a href="l11" class="game-button">CYCLES</a>
+  <a href="l12" class="game-button">BLAST PROCESSING</a>
+  <a href="l13" class="game-button">TIME MACHINE</a>
+  <a href="l14" class="game-button">X-STEPS</a>
+  <a herf="l16" class="game-button">ELECTROMAN ADVENTURE</a>
+  <a herf="l17" class="game-button">ELECTROMAN ADVENTURE</a>
+  <a herf="l19" class="game-button">ELECTROMAN ADVENTURE</a>
+  <a herf="l16" class="game-button">ELECTROMAN ADVENTURE</a>
+  <a href="l1-2-3-i.html" class="game-button">FIRST THREE LEVELS INVINCIBLE</a>
+  
+  
+  
+  
+
+  <footer>Scratch Powered Games</footer></footer>
+</body>
+</html>
